@@ -10,5 +10,6 @@ export default Container;
 
 const $container = styled.div`
   margin: auto;
-  width: 110rem;
+  width: 65rem;
+  max-width: 100%;
 `;
