@@ -22,6 +22,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    border: none;
+    outline: none;
   }
 
   html {
@@ -57,6 +59,8 @@ export const GlobalStyle = createGlobalStyle`
     width: 100vw;
     overflow-x: hidden;
     min-height: 100vh;
+
+    position: relative;
   }
  
   ol,
@@ -81,6 +85,31 @@ export const GlobalStyle = createGlobalStyle`
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
+  }
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #eeeeee30;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c3c3c3;
+    border-radius: 0.3rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #c0c0c0;
+    border-radius: 0.3rem;
   }
 
 `;

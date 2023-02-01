@@ -6,9 +6,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalStyle />
 
-      <main className={IRANSans.className}>
+      <div className={IRANSans.className}>
         <Component {...pageProps} />
-      </main>
+      </div>
     </>
   );
 }
