@@ -5,25 +5,28 @@ import HeroTitle from "./HeroTitle";
 import HeroImage from "./../../assets/images/hero/hero-image.svg";
 import Wave from "./../../assets/images/hero/wave.svg";
 import WaveFade from "./../../assets/images/hero/wave-fade.svg";
+import { device } from "../../styles/global";
 
 const Hero = () => {
   return (
-    <$Container>
-      <$Content>
-        <HeroTitle title="طراحی سایت با" primary="پرو‌اس‌اس‌ام" />
-        <$ButtonWrapper>
-          <Button text="نمونه کارها" rgb="136, 128, 206" />
-          <Button text="سفارش طراحی سایت" />
-        </$ButtonWrapper>
-      </$Content>
-      <$Image>
-        <HeroImage />
-      </$Image>
-      <$Waves>
-        <WaveFade />
-        <Wave />
-      </$Waves>
-    </$Container>
+    <$Wrapper>
+      <$Container fullHeight>
+        <$Content>
+          <HeroTitle title="طراحی سایت با" primary="پرو‌اس‌اس‌ام" />
+          <$ButtonWrapper>
+            <Button text="نمونه کارها" rgb="136, 128, 206" />
+            <Button text="سفارش طراحی سایت" />
+          </$ButtonWrapper>
+        </$Content>
+        <$Image>
+          <HeroImage />
+        </$Image>
+        <$Waves>
+          <WaveFade />
+          <Wave />
+        </$Waves>
+      </$Container>
+    </$Wrapper>
   );
 };
 
@@ -31,25 +34,47 @@ export default Hero;
 
 // Styles
 
-const $Container = styled(Container)`
+const $Wrapper = styled.div`
   position: relative;
-  height: 80vh;
+`;
 
+const $Container = styled(Container)`
   display: flex;
   justify-content: space-between;
+
+  ${device.mobileL} {
+    flex-direction: column;
+    justify-content: center;
+  }
+  ${device.mobileS} {
+    padding: 5rem 0 0;
+  }
 `;
 
 const $Content = styled.div`
-  translate: 2rem -1rem;
+  translate: 2rem 0;
+
+  ${device.mobileL} {
+    translate: 0;
+    text-align: center;
+  }
 `;
 
 const $Image = styled.div`
   width: 60%;
+
+  ${device.tablet} {
+    width: 50%;
+  }
+  ${device.mobileL} {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
 `;
 
 const $Waves = styled.div`
   svg {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     z-index: -2;
@@ -59,4 +84,8 @@ const $Waves = styled.div`
 const $ButtonWrapper = styled.div`
   display: flex;
   gap: 1.5rem;
+
+  ${device.mobileL} {
+    justify-content: center;
+  }
 `;

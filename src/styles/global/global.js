@@ -30,16 +30,16 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     /*font-size : 62.5%;*/
     font-size: var(--rem-lg);
-    @media only screen and ${device.tablet} {
+    ${device.tablet} {
       font-size: var(--rem-md);
     }
-    @media only screen and ${device.mobileL} {
+    ${device.mobileL} {
       font-size: var(--rem-sm);
     }
-    @media only screen and ${device.mobileM} {
+    ${device.mobileM} {
       font-size: var(--rem-xsm);
     }
-    @media only screen and ${device.mobileS} {
+    ${device.mobileS} {
       font-size: var(--rem-xxsm);
     }
   }
@@ -57,10 +57,15 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-tap-highlight-color: transparent;
 
     width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
-    min-height: 100vh;
+    min-height: 100dvh;
 
     position: relative;
+  }
+  
+  #__next {
+    min-height: 100dvh;
   }
  
   ol,
