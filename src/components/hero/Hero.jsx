@@ -14,8 +14,8 @@ const Hero = () => {
         <$Content>
           <HeroTitle title="طراحی سایت با" primary="پرو‌اس‌اس‌ام" />
           <$ButtonWrapper>
-            <Button text="نمونه کارها" rgb="136, 128, 206" />
-            <Button text="سفارش طراحی سایت" />
+            <Button rgb="136, 128, 206">نمونه کارها</Button>
+            <Button>سفارش طراحی سایت</Button>
           </$ButtonWrapper>
         </$Content>
         <$Image>

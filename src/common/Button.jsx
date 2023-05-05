@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const Button = ({ text, link, rgb }) => {
+const Button = ({ children, link, rgb }) => {
   return (
     <$A rgb={rgb} href={link}>
-      {text}
+      {children}
     </$A>
   );
 };
