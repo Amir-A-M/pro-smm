@@ -34,7 +34,7 @@ export default Hero;
 
 // Styles
 
-const $Wrapper = styled.div`
+const $Wrapper = styled.section`
   position: relative;
 `;
 
