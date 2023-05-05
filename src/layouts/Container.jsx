@@ -10,10 +10,14 @@ const Container = forwardRef(function Container(
   const [height, setHeight] = useState("unset");
 
   useEffect(() => {
-    if (fullHeight) {
+    if (!fullHeight || !headerRef.current) return;
+    const resizeObserver = new ResizeObserver(() => {
       const headerHeight = headerRef.current.clientHeight;
       setHeight(headerHeight);
-    }
+    });
+    resizeObserver.observe(headerRef.current);
+
+    return () => resizeObserver.disconnect();
   }, [fullHeight]);
 
   return (
