@@ -1,8 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";
 
-import IRANSans from "../assets/fonts/IRANSans";
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
@@ -38,11 +36,11 @@ class MyDocument extends Document {
     return (
       <Html dir={"rtl"} lang={"fa"}>
         <Head>
-          {this.props.styleTags}
-
           <title>پرو اس‌اس‌ام</title>
+
+          {this.props.styleTags}
         </Head>
-        <body className={IRANSans.className}>
+        <body>
           <Main />
           <NextScript />
         </body>

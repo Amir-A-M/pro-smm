@@ -16,7 +16,7 @@ This set of fonts are used in this project under the license: (.....)
 --------------------------------------------------------------------------------------
 *	
 **/
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
 const IRANSans = localFont({
   src: [

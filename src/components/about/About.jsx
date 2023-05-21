@@ -24,12 +24,10 @@ export default About;
 
 // Styles
 const $Wrapper = styled.section`
-  position: relative;
-
   background-color: #fff;
 
   border-top-left-radius: 10rem 8rem;
-  box-shadow: -20px 17px 300px 0px #8880ce;
+  box-shadow: -20px 17px 300px 0px #8880ce8f;
 
   ${device.mobileM} {
     border-top-left-radius: 7rem 6rem;
@@ -37,6 +35,8 @@ const $Wrapper = styled.section`
 `;
 
 const $Container = styled(Container)`
+  position: relative;
+
   max-width: 35rem;
   width: 100%;
   padding: 3rem 3rem 2rem;

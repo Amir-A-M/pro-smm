@@ -50,7 +50,6 @@ export const GlobalStyle = createGlobalStyle`
     text-align: justify;
     text-justify: inter-word;
     font-weight: 300;
-    font-family: IRANSans;
 	  direction: rtl;
     
     background: #fff;

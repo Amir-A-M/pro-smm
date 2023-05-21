@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../../styles/global";
+import { device } from "../../styles/global";
 
 const BurgerButton = ({ onClick, isOpen, inNav }) => {
   return (

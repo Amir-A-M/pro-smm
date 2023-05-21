@@ -7,7 +7,7 @@ const Hr = () => {
 export default Hr;
 
 const $Hr = styled.hr`
-  height: 0.4rem;
+  height: 0.46rem;
 
   background-color: #dbd8fa;
 `;

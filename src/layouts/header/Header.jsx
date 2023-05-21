@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import Logo from "./../../assets/images/logo/prosmm-header-logo.svg";
 import Blob from "./../../assets/images/hero/big-blob.svg";
 import { device } from "../../styles/global";
-import BurgerButton from "../../components/hero/header/BurgerButton";
+import BurgerButton from "./BurgerButton";
 
 let headerRef;
 const Header = () => {
