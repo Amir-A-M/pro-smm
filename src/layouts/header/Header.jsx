@@ -61,11 +61,12 @@ const $Header = styled.header`
     right: 0;
     top: 0;
     bottom: 0;
-    transform: translate(${({ isOpen }) => (isOpen ? "0" : "100%")}, 0);
+    transform: translate(${({ isOpen }) => (isOpen ? "0" : "110%")}, 0);
 
     width: 80vw;
     max-width: 16rem;
-    padding: 2rem;
+    margin: .4rem;
+    padding: 1.6rem;
 
     flex-direction: column;
     justify-content: start;
@@ -73,8 +74,8 @@ const $Header = styled.header`
 
     background-color: #fff;
     box-shadow: 1px 0px 9px 0px #0000003d;
-    border-radius: 1rem 0 0 1rem;
-    transition: all ease-in-out 100ms;
+    border-radius: .7rem;
+    transition: all ease-in-out 200ms;
   }
 `;
 
