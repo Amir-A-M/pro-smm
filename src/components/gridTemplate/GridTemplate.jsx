@@ -4,6 +4,7 @@ import GridCard from "./GridCard";
 import HeroImage from "./../../assets/images/hero/hero-image.svg";
 import { device } from "../../styles/global";
 import Image from "next/image";
+import React from "react";
 
 const GridTemplate = () => {
   const data = [
@@ -29,7 +30,7 @@ const GridTemplate = () => {
         {data.map((item, i) => {
           if (i % 2)
             return (
-              <>
+              <React.Fragment key={i}>
                 <$Image
                   src={item.imageSrc}
                   alt={item.title}
@@ -37,11 +38,11 @@ const GridTemplate = () => {
                   height={300}
                 />
                 <GridCard {...item} />
-              </>
+              </React.Fragment>
             );
 
           return (
-            <>
+            <React.Fragment key={i}>
               <GridCard {...item} />
               <$Image
                 src={item.imageSrc}
@@ -49,7 +50,7 @@ const GridTemplate = () => {
                 width={400}
                 height={300}
               />
-            </>
+            </React.Fragment>
           );
         })}
       </$Container>
