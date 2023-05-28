@@ -36,8 +36,6 @@ class MyDocument extends Document {
     return (
       <Html dir={"rtl"} lang={"fa"}>
         <Head>
-          <title>پرو اس‌اس‌ام</title>
-
           {this.props.styleTags}
         </Head>
         <body>

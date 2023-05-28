@@ -33,6 +33,7 @@ const $Wrapper = styled.section`
 
 const $Image = styled(Image)`
   position: absolute;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;

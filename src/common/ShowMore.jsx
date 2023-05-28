@@ -20,7 +20,7 @@ const $Button = styled.button`
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
-  margin: 2.5rem auto;
+  margin: 2.5rem auto 0;
 
   font-size: 1.3rem;
   color: #393380;

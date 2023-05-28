@@ -20,6 +20,6 @@ const $heading = styled.h1`
   color: ${({color})=> color ?? 'rgb(255, 255, 255)'};
 
   border-radius: 1.5rem;
-  background-color: rgb(${(p) => p.rgb ?? "158 147 255"});
-  box-shadow: 0 0 2rem 0.1rem rgba(${(p) => p.rgb ?? "158 147 255"}/ 0.6);
+  background-color: rgb(${(p) => p.bg ?? "158 147 255"});
+  box-shadow: 0 0 2rem 0.1rem rgba(${(p) => p.bg ?? "158 147 255"}/ 0.6);
 `;

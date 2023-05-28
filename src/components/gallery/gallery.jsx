@@ -77,7 +77,7 @@ const Gallery = () => {
   };
 
   return (
-    <section>
+    <$Wrapper>
       <Container>
         <$SectionTitle>نمونه کارها</$SectionTitle>
 
@@ -99,11 +99,15 @@ const Gallery = () => {
           ""
         )}
       </Container>
-    </section>
+    </$Wrapper>
   );
 };
 
 export default Gallery;
+
+const $Wrapper = styled.section`
+  padding-bottom: 2.5rem;
+`;
 
 const $SectionTitle = styled(SectionTitle)`
   margin: 1.5rem auto 1.7rem;
