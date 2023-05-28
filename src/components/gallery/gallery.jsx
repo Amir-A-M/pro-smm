@@ -77,7 +77,7 @@ const Gallery = () => {
   };
 
   return (
-    <$Wrapper>
+    <$Wrapper id="works">
       <Container>
         <$SectionTitle>نمونه کارها</$SectionTitle>
 

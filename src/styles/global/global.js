@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     /*font-size : 62.5%;*/
     font-size: var(--rem-lg);
     ${device.tablet} {

@@ -25,7 +25,7 @@ const GridTemplate = () => {
   ];
 
   return (
-    <$Section>
+    <$Section id="services">
       <$Container>
         {data.map((item, i) => {
           if (i % 2)
