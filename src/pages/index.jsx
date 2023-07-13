@@ -7,7 +7,6 @@ import GridTemplate from "../components/gridTemplate/GridTemplate";
 import Hero from "../components/hero/Hero";
 import Header from "../layouts/header/Header";
 import ContactUs from "../components/contact/ContactUs";
-import Footer from "../layouts/footer/Footer";
 
 export default function Home() {
   return (
@@ -27,8 +26,6 @@ export default function Home() {
         <Gallery />
         <ContactUs />
       </main>
-
-      <Footer />
     </>
   );
 }

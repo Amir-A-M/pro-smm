@@ -9,7 +9,7 @@ import { device } from "../../styles/global";
 
 const Hero = () => {
   return (
-    <$Wrapper id="home">
+    <$Wrapper>
       <$Container fullHeight>
         <$Content>
           <HeroTitle title="طراحی سایت با" primary="پرو‌اس‌اس‌ام" />

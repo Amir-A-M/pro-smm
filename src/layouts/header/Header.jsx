@@ -13,10 +13,10 @@ const Header = () => {
 
   const [navList] = useState([
     { link: "#home", text: "خانه" },
-    { link: "#about", text: "درباره ما" },
-    { link: "#services", text: "خدمات" },
-    { link: "#works", text: "نمونه کارها" },
-    { link: "#contact", text: "تماس با‌ما" },
+    { link: "#home", text: "درباره ما" },
+    { link: "#home", text: "خدمات" },
+    { link: "#home", text: "نمونه کارها" },
+    { link: "#home", text: "تماس با‌ما" },
   ]);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,7 +65,7 @@ const $Header = styled.header`
 
     width: 80vw;
     max-width: 16rem;
-    margin: 0.4rem;
+    margin: .4rem;
     padding: 1.6rem;
 
     flex-direction: column;
@@ -74,7 +74,7 @@ const $Header = styled.header`
 
     background-color: #fff;
     box-shadow: 1px 0px 9px 0px #0000003d;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     transition: all ease-in-out 200ms;
   }
 `;
@@ -101,15 +101,15 @@ const $LogoWrapper = styled.div`
 
 const $BlobWrapper = styled.div`
   position: absolute;
-  width: 65vw;
-  height: 55vh;
-
   rotate: 156deg;
+  translate: -50% -50%;
   z-index: -1;
-  translate: -30% 45%;
 
   svg {
     display: block;
+    width: 50vw;
+    height: 50vh;
+
     filter: drop-shadow(0 0 172px rgba(122, 112, 206, 0.55));
   }
 

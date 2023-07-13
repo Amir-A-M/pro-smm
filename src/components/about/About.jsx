@@ -5,7 +5,7 @@ import { device } from "../../styles/global";
 
 const About = () => {
   return (
-    <$Wrapper id="about">
+    <$Wrapper>
       <$Container>
         <$SectionTitle>درباره ما</$SectionTitle>
         <$p>

@@ -8,7 +8,7 @@ import { device } from "../../styles/global";
 
 const ContactUs = () => {
   return (
-    <$Wrapper id="contact">
+    <$Wrapper>
       <$Image src={bgImage} alt="people working" />
       <$overlay />
       <$Container>
