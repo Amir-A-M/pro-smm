@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link rel="icon" type="image/png" href="https://amir-a-m.github.io/RajaeeSchool/assets/img/logo/favicon-32x32.png">
         <title>پرو اس‌اس‌ام</title>
       </Head>
       
