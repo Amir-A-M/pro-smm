@@ -14,18 +14,18 @@ const Gallery = () => {
   const [maxItems, setMaxItems] = useState(9);
 
   const [items, setItems] = useState([
-    { src: "/pro-smm/images/work-sample/1.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/2.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/3.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/4.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/5.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/6.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/7.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/8.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/9.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/1.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/1.jpg", href: "", alt: "" },
-    { src: "/pro-smm/images/work-sample/1.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/1.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/2.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/3.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/4.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/5.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/6.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/7.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/8.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/9.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/1.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/1.jpg", href: "", alt: "" },
+    { src: "./images/work-sample/1.jpg", href: "", alt: "" },
   ]);
 
   const [data, setData] = useState([
